@@ -11,7 +11,7 @@
     <div class="row">
       <div class="col-md-12 jumbotron text-center">
         <h1>NYC Parking Dashboard</h1>
-        <p>parking meter information in new york city</p>
+        <p>Parking meter information in New York City</p>
       </div>
     </div>
   </div>
@@ -22,12 +22,18 @@
     crossorigin="" />
 
   <!-- Our CSS -->
-  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-
-  <!-- The div that holds our map -->
+  <div class = "container">
+    <div class = "row">
+      <div class="col-md-5">
+        <div id="bar"></div>
+      </div>
+    </div>
+  </div>
+      <!-- The div that holds our map -->
   <div id="map"></div>
 
   <!-- Leaflet JS -->
@@ -37,7 +43,9 @@
   <!-- D3 JavaScript -->
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <!-- Our JavaScript -->
-  <script type="text/javascript" src="project3/nyc.js"></script>
+  <script type="text/javascript" src="nyc.js"></script>
+  <!-- Plotly -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </body>
 
 </html>
