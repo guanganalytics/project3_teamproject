@@ -1,0 +1,82 @@
+[
+ {
+   "on_street": "Broadway",
+   "frequency": 472
+ },
+ {
+   "on_street": "3 Avenue",
+   "frequency": 268
+ },
+ {
+   "on_street": "5 Avenue",
+   "frequency": 212
+ },
+ {
+   "on_street": "2 Avenue",
+   "frequency": 176
+ },
+ {
+   "on_street": "Queens Boulevard",
+   "frequency": 155
+ },
+ {
+   "on_street": "Jamaica Avenue",
+   "frequency": 152
+ },
+ {
+   "on_street": "Nostrand Avenue",
+   "frequency": 144
+ },
+ {
+   "on_street": "Northern Boulevard",
+   "frequency": 139
+ },
+ {
+   "on_street": "Flatbush Avenue",
+   "frequency": 135
+ },
+ {
+   "on_street": "Coney Island Avenue",
+   "frequency": 122
+ },
+ {
+   "on_street": "8 Avenue",
+   "frequency": 117
+ },
+ {
+   "on_street": "7 Avenue",
+   "frequency": 112
+ },
+ {
+   "on_street": "Amsterdam Avenue",
+   "frequency": 112
+ },
+ {
+   "on_street": "Lexington Avenue",
+   "frequency": 110
+ },
+ {
+   "on_street": "Madison Avenue",
+   "frequency": 106
+ },
+ {
+   "on_street": "1 Avenue",
+   "frequency": 106
+ },
+ {
+   "on_street": "White Plains Road",
+   "frequency": 98
+ },
+ {
+   "on_street": "East Tremont Avenue",
+   "frequency": 95
+ },
+ {
+   "on_street": "Liberty Avenue",
+   "frequency": 93
+ },
+ {
+   "on_street": "Myrtle Avenue",
+   "frequency": 93
+ }
+]

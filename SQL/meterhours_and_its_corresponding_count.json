@@ -1,0 +1,42 @@
+[
+ {
+   "meter_hours": "2 HR Pas Mon-Sat 0900-1900",
+   "frequency": 4514
+ },
+ {
+   "meter_hours": "2 HR Pas Mon-Sat 0800-1900",
+   "frequency": 2366
+ },
+ {
+   "meter_hours": "2 HR Pas Mon-Sat 0830-1900",
+   "frequency": 2088
+ },
+ {
+   "meter_hours": "3HR Com Mon-Sat 0700-1800 /6HR Pas Mon-Sat 1800-2400",
+   "frequency": 241
+ },
+ {
+   "meter_hours": "3HR Com Mon-Sat 0700-1900",
+   "frequency": 185
+ },
+ {
+   "meter_hours": "2 HR Pas Mon-Sat 0930-1900",
+   "frequency": 153
+ },
+ {
+   "meter_hours": "2 HR Pas 0800-1900 Mon-Thur/4Hr Pas 0800-1900 Fri",
+   "frequency": 137
+ },
+ {
+   "meter_hours": "3HR Com Mon-Fri 0700-1900",
+   "frequency": 135
+ },
+ {
+   "meter_hours": "3HR Com Mon-Fri 0800-1800",
+   "frequency": 132
+ },
+ {
+   "meter_hours": "3HR Com Mon-Fri 0800-1900",
+   "frequency": 101
+ }
+]
