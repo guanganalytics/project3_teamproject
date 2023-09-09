@@ -1,0 +1,22 @@
+[
+ {
+   "borough": "Manhattan",
+   "frequency": 4169
+ },
+ {
+   "borough": "Brooklyn",
+   "frequency": 3832
+ },
+ {
+   "borough": "Queens",
+   "frequency": 3664
+ },
+ {
+   "borough": "Bronx",
+   "frequency": 1465
+ },
+ {
+   "borough": "Staten Island",
+   "frequency": 285
+ }
+]
