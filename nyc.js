@@ -67,34 +67,19 @@ show_meterhours();
 
 //creating information charts for each meter with drop down menu to select
 const url4= "../data_cleaned.json";
-function init() {
-  d3.json(url4).then(function(data4) {
-    let selector = d3.select("#selDataset");
- for (let i = 0; i < data4.length; i++){
-    selector
-      .append("option")
-      .text(data4[i].objectid)
-      .property("value", data4[i].objectid);
-  };
-  let firstSample = data4[0];
-  create_information(firstSample);
-});
-}
 
 
 function create_information(objectid){
   d3.json(url4).then(function(data4) {
-  let Info = data4.filter(eachmeter=>eachmeter.objectid==objectid);
-  console.log(Info)
+  let Info = data4.filter(eachmeter=>eachmeter.objectid==objectid)[0];
+  console.log(`create_information ID: ${objectid} info: ${Info}`);
   let displaydata = d3.select("#sample-metadata");
   displaydata.html("")
-  for (item in Info[0]){
-    displaydata.append("h6").text(`${item.toLowerCase()}: ${Info[0][item]}`)
+  for (item in Info){
+    displaydata.append("h6").text(`${item.toLowerCase()}: ${Info[item]}`)
     
   }});
 };
-
-init();
 
 
 function optionChanged(objectid) {
@@ -103,8 +88,28 @@ function optionChanged(objectid) {
 });
 };
 
+function sort_by_id(meter_a, meter_b){
+  return meter_a.objectid - meter_b.objectid;
+}
+
+function init() {
+  d3.json(url4).then(function(data4) {
+    data4.sort(sort_by_id);
+    let selector = d3.select("#selDataset");
+    for (let i = 0; i < data4.length; i++){
+      selector
+        .append("option")
+        .text(data4[i].objectid)
+        .property("value", data4[i].objectid);
+    };
+  let firstMeter = data4[0];
+  let firstid = firstMeter.objectid;
+  console.log(firstid)
+  create_information(firstid);
+});
+}
 
 
-
+init();
 
 
