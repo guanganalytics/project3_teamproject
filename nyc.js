@@ -1,6 +1,7 @@
 
-//creating ploty chars to show the borough in scope
-const url1= "../SQL/borough_in_scope_and_corresponding_counts.json";
+//creating plotly chars to show the borough in scope
+// const url1= "../SQL/borough_in_scope_and_corresponding_counts.json";
+const url1= "http://127.0.0.1:5000/api/v1.0/quantity-of-meters-per-borough";
 function show_borough() {
   d3.json(url1).then(function(data) {
     // console.log(data)
@@ -22,8 +23,9 @@ function show_borough() {
 show_borough();
 
 
-//creating ploty chars to show the street in scope
-const url2= "../SQL/top_20_street_and_its_corresponding_count.json";
+//creating plotly chars to show the street in scope
+// const url2= "../SQL/top_20_street_and_its_corresponding_count.json";
+const url2= "http://127.0.0.1:5000/api/v1.0/top-20-streets-with-most-meters";
 function show_street() {
   d3.json(url2).then(function(data2) {
     let street= data2.map(item => item.on_street);
@@ -43,7 +45,8 @@ show_street();
 
 
 //creating ploty chars to show the meter_hours in scope
-const url3= "../SQL/meterhours_and_its_corresponding_count.json";
+// const url3= "../SQL/meterhours_and_its_corresponding_count.json";
+const url3= "http://127.0.0.1:5000/api/v1.0/meter-hours";
 function show_meterhours() {
   d3.json(url3).then(function(data3) {
     let meter_hours= data3.map(item => item.meter_hours);
